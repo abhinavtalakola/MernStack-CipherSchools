@@ -12,5 +12,55 @@
     <h4>Fourth Heading</h4>
     <h5>Fifth Heading</h5>
     <h6>Sixth Heading</h6>
+    <p><b>The below is a parapgraph</b></p>
+    <p>Hello my name is abhinav i am studying B.Tech(CSE) and i am learning MERn=N Stack at CipherSchools</p>
+    <p><b>The below is a anchor tag</b></p>
+    <a href="https://github.com/abhinavtalakola/CipherSchools/blob/main/Module-1/Lecture4-CipherSchools">Click This for viewing the assignments uploaded in the github</a>
+    <p><b>The below is a image</b></p>
+    <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202012/chris-ried-ieic5Tq8YMk-unsplas_1200x768.jpeg?size=1200:675" height="300px" width="300px" alt="Coding"><br><br>
+    <button>Click Me i am a button</button>
+
+    <blockquote>Hello World</blockquote>
+    <hr>
+    <q>Hello World</q><br><br>
+    <blockquote cite="https://www.mongodb.com/resources/languages/mern-stack">
+        MERN is one of several variations of the MEAN stack
+        (MongoDB, Express, Angular, Node), where the traditional Angular.js front-end framework is replaced with React.js. Other variants include MEVN (MongoDB, Express, Vue, Node), and really any front-end JavaScript framework.
+    </blockquote><br>
+    <p><abbr title="World Health Organization">WHO</abbr> Is A Good Organization</p><br>
+    <address>
+        Learning From Shantanu Shubham.<br>
+        You can contact/visit me on the LinkedIn:<br>
+    </address>
+    <p><b>The below is an example of unordered list</b></p>
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Orange</li>
+    </ul>
+    <p><b>The below is an example of ordered list</b></p>
+    <ol>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Orange</li>
+    </ol><br>
+
+    <p><b>The below is an example of discription list</b></p>
+    <dl>
+        <dt>MongoDB</dt>
+        <dd>MongoDB is a source-available, cross-platform, document-oriented database program. Classified as a NoSQL database product</dd>
+        <dt>Express</dt>
+        <dd>Express.js is a back end web application framework for building RESTful APIs with Node.js, released as free and open-source software under the MIT License</dd>
+        <dt>React</dt>
+        <dd>React is a free and open-source front-end JavaScript library for building user interfaces based on UI components. It is maintained by Meta and a community of individual developers and companies</dd>
+        <dt>Node js</dt>
+        <dd>Node.js is an open-source, cross-platform JavaScript runtime environment that executes JavaScript code outside of a browser</dd>
+    </dl><br>
+
+    <p>Hello World.<br><i>This is MERN Stack</i><br><b>This is MERN Stack</b><br><u>This is MERN Stack</u></p><br>
+    <div>
+        <p><b>This below is a div tag along with italic and span tag</b></p>
+        <p>My name is abhinav and <i> I live in <span style="color: red;">India</span></i></p>
+    </div>
 </body>
 </html>
