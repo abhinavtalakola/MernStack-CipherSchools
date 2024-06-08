@@ -1,0 +1,74 @@
+
+/* Element Selector   
+p{
+    text-align: center;
+    color: red;
+}
+*/
+
+/* ID Selector 
+#p1{
+    text-align: center;
+    color: green;
+}
+*/
+
+/* Class Selector
+.p2{
+    text-align: center;
+    color: blue;
+}
+*/
+
+/* Universal Selector 
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+*/
+
+/* Grouping Selector
+p,#p1,.p2{
+    font-size: x-large;
+}
+*/
+
+/* Descendant Selector 
+div p{
+    background-color: yellow;
+}
+*/
+
+/* Child Selector
+div > p{
+    background-color: cyan;
+}
+*/
+
+/* Adjacent Sibiling Selector
+div + p{
+    background-color: brown;
+}
+*/
+
+/* General Sibiling Selector
+div ~ p{
+    background-color: gray;
+}
+*/
+
+
+/* Pseduo-class Selector */
+div ~ p:hover{
+    background-color: burlywood;
+}
+
+
+/* Pseduo-element Selector */
+div ~ p::first-letter{
+    color: red;
+}
+
+/* Attribute Selector */
+a[target]{
+    background-color: cyan;
+}
