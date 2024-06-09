@@ -1,0 +1,130 @@
+var a=10;
+{
+    let a=5;
+    console.log(a);
+    // Let keyword will have block scope
+}
+console.log(a);
+
+/*
+How we use normal function
+var a=function(x,y){
+    return x+y;
+};
+console.log(a(5,6));
+*/
+
+// Use of arrow function
+const b=(x,y)=>{
+    return x+y;
+};
+console.log(b(5,6));
+
+/*
+Short hand syntax for an arrow function (Can be only used when function is immediately returning or it have a single statement)
+const b=(x,y)=>x+y;
+console.log(b(5,6));
+*/
+
+/*
+Spread Operator(...)
+const a1=["a","b","c"]
+const a2=["d","e","f"]
+const a3=["g","h","i"]
+const a4=["j","k","l"]
+
+const x=[...a1, ...a2, ...a3, ...a4]
+console.log(x);
+*/
+
+// Another example of spread operator
+const nums=[1,50,10,-5,4]
+let maxValue=Math.max(...nums)
+console.log(maxValue);
+
+
+// for-of Loop
+/*
+const nums1=[1,50,10,-5,4]
+let sum=0;
+for(let num of nums1){
+    sum+=num;
+}
+console.log(sum);
+*/
+
+const name="Abhinav";
+let text="";
+for(let ch of name){
+    text+=ch+" ";
+}
+console.log(text);
+
+
+// Javascript Maps
+const fruits = new Map([["apples", 500], ["bananas", 300], ["oranges", 400]]);
+console.log(fruits);
+console.log(fruits.get("apples"));
+
+// Javascript Set
+const letters=new Set();
+letters.add("a");
+letters.add("b");
+letters.add("a");
+letters.add("c");
+console.log(letters); // Duplicates will not be added again
+
+
+// Usage of class
+class Car{
+    constructor(name, year){
+        this.name=name;
+        this.year=year;
+    }
+}
+const myCar1 = new Car("Ford", 2014);
+const myCar2 = new Car("Toyota", 2017);
+console.log(myCar1, myCar2);
+
+
+// Promises
+const myFunction =()=>{
+    return myPromise = new Promise((resolve , reject)=>{
+        setTimeout(()=>{
+            console.log("This is Inside of Promise");
+            resolve();
+        },2000);
+    });
+};
+myFunction()
+    .then(()=>{
+        console.log("Resolved");
+    })
+    .catch(()=>{
+        console.error("Rejected");
+    });
+
+
+// Javascript Symbol
+const person={
+    firstName:"abcd",
+    lastName:"efgh",
+    age:20,
+};
+let id=Symbol("id");
+person[id]=1234;
+console.log(person);
+
+// Default parameters
+const c=(a,b=10)=>a+b;
+console.log(c(10));
+
+// Rest Operators
+const addNumbers =(...args)=>{
+	let sum =0;
+	for(let arg of args){
+		sum += arg;
+	}
+	return sum;
+};
+console.log(addNumbers(1,2,3,4,5,6));
