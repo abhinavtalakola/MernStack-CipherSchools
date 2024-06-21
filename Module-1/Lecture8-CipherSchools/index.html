@@ -1,1 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h1>My Page Title</h1>
+        <p>Nice Caption Goes Here</p>
 
+        <article class="first_article">
+            <h2>List of amazing fruits</h2>
+            <p>Must eat fruits</p>
+
+            <div class="wrapper-1">
+                <ul class="apple-list">
+                    <li class="apple">Apples</li>
+                    <li class="orange">Oranges</li>
+                    <li class="mango">Mangoes</li>
+                    <li class="grape">Grapes
+                        <ul>
+                            <li class="type-1">Moon drops</li>
+                            <li>Sultana</li>
+                            <li>Concord</li>
+                            <li>Crimson Seedless</li>
+                        </ul>
+                    </li>
+                    <li class="banana">Bananas</li>
+                </ul>
+                <button class="btn-1">Read full list</button>
+            </div>
+        </article>
+
+        <!--
+            const headings = document.querySelectorAll("h2")
+            So, when we enter this in the console the browser the output would come as undefined
+
+            But if we enter headings then the list of headings which are present in our code will appear there(h1 to h6)
+            Like in our code we have two headings (<h2>List of amazing fruits</h2>) and (<h2>Amazing palces in Kenya</h2>)
+            And these two will be stored in a nodelist with indexes 0 and 1.
+            
+            So, if we enter const firstHeading=headings[0] it will print undefined
+            but if later if we type firstHeading and press enter the output will come as
+            <h2>List of amazing fruits</h2>
+
+            Similarly even for the second heading
+            const firstHeading=headings[1]
+            then we enter secondHeading and press enter
+            <h2>Amazing places in India</h2>
+
+            For accessing the content we can enter
+            document.querySelector(".orange").innerHTML
+            which will result as 'Oranges'
+
+
+            And when we enter const appleList=document.querySelector(".apple-list") at first it will be undefined
+            but later when we enter appleList and press enter the output will come as
+
+            <ul class="apple-list">
+                <li class="apple">...<li>
+                <li class="orange">...<li>
+                <li class="mango">...<li>
+                <li class="grape">...<li>
+                <li class="banana">...<li>
+            </ul>
+
+            But when we enter appleList.children then the output will come as
+            HTMLCollection(5) [li.apple, li.orange, li.mango, li.grape, li.banana]
+            0: li.apple
+            1: li.orange
+            2: li.mango
+            3: li.grape
+            4: li.banana
+
+            and along with this even the length will be printed which is 5
+            appleList.childNodes
+
+            But when we enter appleList.firstChild
+            the output would print as #text 
+            But when we enter appleList.firstElementChild then the output would come as
+            <li class="apple">...</li>
+
+            And similarly for the last child also
+            appleList.lastChild would print as #text
+            But appleList.lastElementChild would print output as
+            <li class="banana">...</li>
+
+            And when we enter appleList.parentElement the output would come as
+            <div class=​"wrapper-1">​…​</div>​
+
+            const btn=document.querySelector(".btn-1") will result in undefined
+            but when btn is entered then the output will come as <button class="btn-1">Read full list</button>
+            
+        -->
+
+        <article class="second_article">
+            <h2>Amazing places in India</h2>
+            <p>Must visit places in India</p>
+
+            <div class="wrapper-2">
+                <ul class="places-list">
+                    <li>Taj Mahal</li>
+                    <li>Mysore Palace</li>
+                    <li>Red Fort</li>
+                    <li>Gateway Of India</li>
+                    <li>Coorg</li>
+                </ul>
+                <button class="btn-2">Read full list</button>
+            </div>
+        </article>
+    </main>
+</body>
+</html>
