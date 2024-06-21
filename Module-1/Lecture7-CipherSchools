@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Access Element by ID</title>
+</head>
+<body>
+    <!--
+    <h1 id="header">Hello, World!</h1>
+    <p id="paragraph">This is a paragraph.</p>
+    <script>
+        /*
+        Initially the output would be Hello, World! but as we are accessing the 
+        element with the id header and changing the text content of header
+        */
+        var header = document.getElementById("header");
+        header.textContent = "Hello, DOM!";
+    </script>
+    -->
+    <form name="f1">
+        <input name="name" id="txt1" value="Abhinav">
+    </form>
+    <!--
+    So When we open this code in browser and later open the console and want to fetch the value stored in the 
+    input field then we can access it by entering document.f1.name.value which returns 'Abhinav'    
+    -->
+    <div>
+        <p name="p1">Para 1</p>
+        <p>Para 2</p>
+    </div>
+    <div>
+        <p>Para 3</p>
+        <p>Para 4</p>
+    </div>
+    <div>
+        <a href="https://cipherschools.com">CipherSchools</a><br>
+        <a href="https://google.com">Google</a>
+    </div>
+</body>
+</html>
