@@ -1,1 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <!--
+        Events
+        The below h1 heading can be changed when clicked on the heading in the browser either by directly doing
+        it as <h1 onclick="this.innerHTML=`This is after click`">My Page Title</h1> (OR)
+        can also be changed using a function
+        -->
+        <h1 onclick="changeText(this)">My Page Title</h1>
+        <p>Nice Caption Goes Here</p>
 
+        <article class="first_article">
+            <h2>List of amazing fruits</h2>
+            <p>Must eat fruits</p>
+
+            <div class="wrapper-1">
+                <ul class="apple-list">
+                    <li class="apple">Apples</li>
+                    <li class="orange">Oranges</li>
+                    <li class="mango">Mangoes</li>
+                    <li class="grape">Grapes
+                        <ul>
+                            <li class="type-1">Moon drops</li>
+                            <li>Sultana</li>
+                            <li>Concord</li>
+                            <li>Crimson Seedless</li>
+                        </ul>
+                    </li>
+                    <li class="banana">Bananas</li>
+                </ul>
+                <button class="btn-1">Read full list</button>
+            </div>
+        </article>
+
+        <article class="second_article">
+            <h2>Amazing places in India</h2>
+            <p>Must visit places in India</p>
+
+            <div class="wrapper-2">
+                <ul class="places-list">
+                    <li>Taj Mahal</li>
+                    <li>Mysore Palace</li>
+                    <li>Red Fort</li>
+                    <li>Gateway Of India</li>
+                    <li>Coorg</li>
+                </ul>
+                <button class="btn-2">Read full list</button>
+            </div>
+            <div>
+                <button onclick="displayDate()">The time is: </button>
+                <p id="demo"></p>
+            </div>
+        </article>
+    </main>
+    <input type="text" id="firstName" onchange="upperCase()">
+    <div onmousedown="mDown(this)" onmouseup="mUp(this)" style="background-color: red; width:120px; height:20px; padding: 40px;"></div>
+    <script>
+        function changeText(id){
+            id.innerHTML=`This is after clicking`
+        }
+        function displayDate(){
+            document.getElementById("demo").innerHTML=new Date();
+        }
+        function upperCase(){
+            const x=document.getElementById("firstName");
+            x.value=x.value.toUpperCase();
+        }
+        function mOver(obj){
+            obj.innerHTML="Thank You";
+        }
+        function mOut(obj){
+            obj.innerHTML="Mouse Over Me";
+        }
+        function mDown(obj){
+            obj.style.backgroundColor="cyan";
+            obj.innerHTML="Release Me!";
+        }
+        function mUp(obj){
+            obj.style.backgroundColor="green";
+            obj.innerHTML="Hello World!";
+        }
+    </script>
+</body>
+</html>
