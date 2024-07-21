@@ -15,7 +15,6 @@ const router = createBrowserRouter([
 ])
 
 const App=()=>{
-    useState [tasks,setTasks]=useState([]);
     return <RouterProvider router={router}/>;
 };
 
