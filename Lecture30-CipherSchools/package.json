@@ -1,0 +1,12 @@
+{
+  "name": "math",
+  "version": "1.0.0",
+  "description": "This is a test app based on Math.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abhinav Reddy",
+  "license": "ISC"
+}
